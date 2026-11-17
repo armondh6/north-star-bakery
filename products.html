@@ -35,7 +35,27 @@
       <p>Sample price range: $25–$75 and up, depending on size and design.</p>
       <p><a href="contact.html">Ask about a special order</a></p>
     </section>
+  <section>
+<h2>Choose Your Favorite Bakery Product</h2>
+<p>Select your favorite treat and we will remember it!</p>
+
+<label for="favoriteProduct">Favorite Product:</label>
+<select id="favoriteProduct">
+<option value="">-- Select a Product --</option>
+<option value="Sourdough Bread">Sourdough Bread</option>
+<option value="Chocolate Chip Cookies">Chocolate Chip Cookies</option>
+<option value="Cinnamon Rolls">Cinnamon Rolls</option>
+<option value="Cupcakes">Cupcakes</option>
+</select>
+
+<button type="button" onclick="saveFavorite()">
+Save My Favorite
+</button>
+
+<p id="favoriteMessage" aria-live="polite"></p>
+</section>
   </main>
   <footer><p>&copy; 2026 North Star Bakery. Baked with care for our neighborhood.</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
